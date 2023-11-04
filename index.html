@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>safin.project-1</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>SaFin</h1>
+            </div>
+            <ul class="links">
+                <li><a href="hero">HOME</a></li>
+                <li><a href="ABOUT">ABOUT</a></li>
+                <li><a href="SERVICE">SERVICE</a></li>
+                <li><a href="CONTACT">CONTACT</a></li>    
+            </ul>
+            <div class="action">
+                <a href="#" class="action_btn">Singup</a>
+                <a href="#" class="action_btn">Login</a>
+            </div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+           
+        </div>
+        
+        <div class="dropdown_menu ">
+            <li><a href="hero">HOME</a></li>
+            <li><a href="ABOUT">ABOUT</a></li>
+            <li><a href="SERVICE">SERVICE</a></li>
+            <li><a href="CONTACT">CONTACT</a></li>
+            <div class="action">
+                <a href="#" class="action_btn">Singup</a>
+                <a href="#" class="action_btn">Login</a>
+            </div>
+        </div>
+        <main >
+            <section id="hero">
+                <h1>Welcome</h1>
+                <p>Hey,this is safin. professional in web   desing and devoloping. <br>
+                    Working with clients, businesses or organizations on a<br>  contract or project basis
+                    Contact me to create an app or website.
+                    <a class="lm" href="@">learn more ....</a>
+                </p>
+            </section>
+           
+        </main>
+    </header>
+    
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+            ?'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+            
+        }
+    </script>
+
+    
+</body>
+</html>
